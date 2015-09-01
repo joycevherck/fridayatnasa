@@ -4,6 +4,7 @@ $(function() {
 
 		init: function() {
 
+			// ajax call
 			$.ajax({
 			    url: "https://api.github.com/users/nasa/repos?callback=replace_me&format=jsonp",
 			    jsonp: "callback",
@@ -52,8 +53,27 @@ function showData(data) {
 		}
 	}
 
-	$.each(lang, function(i, val) {
-		$('ul#langs').append('<li>' + val[0] + '</li>');
+	// create chart
+	var ctx = $("#langChart").get(0).getContext("2d"); // get canvas
+	var chartData = [];
+	var polar;
+	var colors = [ '#850F85', '#680F85', '#4A0F85', '#300F85', '#150F85', '#0F3885', '#0F6785', '#0F8385', '#0F856B', '#0F854F', '#0F852E' ]
 
+	$.each(lang, function(i, val) { // get data in var
+		var v = val[1];
+		var l = val[0];
+
+		chartData.push({
+			value: v,
+			color: colors[i],
+			highlight: '#993939',
+			label: l
+		});
+
+		$('ul#langs').append('<li><span style="background-color:' + colors[i] + ';" data-color="' + colors[i] + '"></span>' + val[0] + '</li>');
 	})
+
+	polar = new Chart(ctx).PolarArea(chartData);
+
+
 }

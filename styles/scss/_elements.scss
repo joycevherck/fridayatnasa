@@ -117,5 +117,29 @@ img, a img, img.noborder {
 	margin: 0 auto;
 }
 
-/*  */
+/* content  */
 
+#content {
+	padding: 40px;
+}
+
+#langs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	
+	span {
+		width: 15px;
+		height: 15px;
+		margin: 0 5px 0 0;
+		position: relative;
+		top: 2px;
+		display: inline-block;
+		@include border-radius(50%);
+	}
+}
+
+#langChart {
+	float: left;
+}

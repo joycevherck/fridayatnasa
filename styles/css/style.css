@@ -65,7 +65,7 @@
 
 body {
   background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -161,6 +161,27 @@ img, a img, img.noborder {
   display: block;
   margin: 0 auto; }
 
-/*  */
+/* content  */
+#content {
+  padding: 40px; }
+
+#langs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left; }
+  #langs span {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+
+#langChart {
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

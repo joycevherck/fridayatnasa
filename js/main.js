@@ -56,8 +56,15 @@ function showData(data) {
 	// create chart
 	var ctx = $("#langChart").get(0).getContext("2d"); // get canvas
 	var chartData = [];
+	var chartOptions = {
+		//scaleShowLabelBackdrop : false,
+		//scaleShowLine : false,
+		scaleBackdropPaddingY: 5,
+		scaleBackdropPaddingX: 5,
+		segmentStrokeColor: "#b84343",
+	}
 	var polar;
-	var colors = [ '#850F85', '#680F85', '#4A0F85', '#300F85', '#150F85', '#0F3885', '#0F6785', '#0F8385', '#0F856B', '#0F854F', '#0F852E' ]
+	var colors = [ '#F8F6F2', '#F0ECE2', '#EAE5D7', '#E3DCC9', '#DCD3BC', '#D5CAAE', '#CEC2A1', '#C8B993', '#C1B086', '#BAA778', '#B39E6B' ]
 
 	$.each(lang, function(i, val) { // get data in var
 		var v = val[1];
@@ -66,14 +73,12 @@ function showData(data) {
 		chartData.push({
 			value: v,
 			color: colors[i],
-			highlight: '#993939',
+			highlight: '#4A2D2D',
 			label: l
 		});
-
-		$('ul#langs').append('<li><span style="background-color:' + colors[i] + ';" data-color="' + colors[i] + '"></span>' + val[0] + '</li>');
 	})
 
-	polar = new Chart(ctx).PolarArea(chartData);
+	polar = new Chart(ctx).PolarArea(chartData, chartOptions);
 
 
 }

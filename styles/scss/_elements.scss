@@ -121,6 +121,22 @@ img, a img, img.noborder {
 
 #content {
 	padding: 40px;
+	width: 40%;
+	
+	h1 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1em;
+		margin: 0 0 5px 0;
+		padding: 5px 0 0 0;
+		display: inline-block;
+		border-top: 2px solid #fff;
+	}
+
+	h2 {
+		font-size: 1em;
+		margin: 0
+	}
 }
 
 #langs {
@@ -141,5 +157,10 @@ img, a img, img.noborder {
 }
 
 #langChart {
-	float: left;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include transform( translateX(-50%) translateY(-50%) ); 
+	width: 80%;
+	height: 80%;
 }

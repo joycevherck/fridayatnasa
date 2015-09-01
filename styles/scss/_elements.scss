@@ -1,0 +1,121 @@
+h1 {
+	font-size: 2.6em;
+	margin: 0 0 15px 0;
+	font-weight: normal; 
+}
+
+h2 {
+	font-size: 2.2em;
+	margin: 25px 0 5px 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1.8em;
+	margin: 20px 0 5px 0;
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 1.4em;
+	margin: 20px 0 5px 0;
+	font-weight: normal; 
+}
+
+h5 {
+	font-size: 1.2em;
+	margin: 20px 0 5px 0;
+	font-weight: normal; 
+}
+
+h6 {
+	font-size: 1em;
+	margin: 20px 0 5px 0;
+	font-weight: normal; 
+}
+
+p {
+	font-size: 1.2em;  
+	line-height: 1.3em;
+	margin: 0 0 20px 0;
+}
+
+button, input[type=submit], .button {
+	display: inline-block;
+	@include transition(all, 0.25s, ease-in-out);
+	
+	&:hover {
+		
+	}
+}
+
+a {
+	color: $copy;
+	font-weight: normal;
+	@include transition(all, 0.25s, ease-in-out);
+	
+	&:hover {
+
+	}
+}
+
+blockquote {
+	margin: 30px 0;
+	padding: 40px;
+	line-height: 1.8em;
+}
+
+ul, ol {
+	margin: 0 0 20px 0;
+	padding: 0 0 0 20px;
+
+	li {
+		line-height: 1.8em;
+	}
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+table {
+	width: 100%;
+	margin: 15px 0;
+
+	th, td {
+		padding: 10px;
+		background-color: #F5F5F5;
+	}
+
+	th {
+		
+	}
+}
+
+/* images */
+
+img, a img, img.noborder {
+	border: 0; 
+}
+
+.align-left {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.align-right {
+	float: right;
+	margin: 0 0 10px 20px;
+}
+
+.align-center {
+	display: block;
+	margin: 0 auto;
+}
+
+/*  */
+

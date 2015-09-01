@@ -1,0 +1,19 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+	background-color: #fff;
+	font-family: $body;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: $copy;
+}
+
+@import "_elements.scss";

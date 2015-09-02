@@ -64,7 +64,7 @@ function showData(data) {
 		segmentStrokeColor: "#b84343",
 	}
 	var polar;
-	var colors = [ '#F8F6F2', '#F0ECE2', '#EAE5D7', '#E3DCC9', '#DCD3BC', '#D5CAAE', '#CEC2A1', '#C8B993', '#C1B086', '#BAA778', '#B39E6B' ]
+	var colors = [ '#F8F6F2', '#F0ECE2', '#EAE5D7', '#E3DCC9', '#f2e6d3', '#eeddc0', '#e9d0a7', '#e5c592', '#e2bb7e', '#deb36e', '#dcad63' ]
 
 	$.each(lang, function(i, val) { // get data in var
 		var v = val[1];
